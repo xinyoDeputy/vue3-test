@@ -1,0 +1,23 @@
+<template>
+<div>
+
+    <ul>
+        <li>button</li>
+        <li>Dropdown</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</template>
+
+<script>
+export default {
+    name: "Sidebar"
+}
+</script>
