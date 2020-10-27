@@ -3,9 +3,9 @@
     <h1>{{ msg }}</h1>
     <el-row>
         <h2>Button</h2>
-        <el-button>Default</el-button>
-        <el-button type="primary">Primary</el-button>
-        <el-button type="success">Success</el-button>
+        <co-button>Default</co-button>
+        <co-button type="primary">Primary</co-button>
+        <co-button type="success">Success</co-button>
     </el-row>
 
     <el-row>
@@ -35,11 +35,14 @@
     <el-row>
         <h2>Input Number</h2>
         <el-input-number v-model="num" @change="handleChange" :min="1" :max="10"></el-input-number>
+        <input type="text" v-model="input">
     </el-row>
 </div>
 </template>
 
 <script>
+import test from 'test-lib-local';
+
 export default {
     name: 'HelloWorld',
     props: {
@@ -47,7 +50,7 @@ export default {
     },
     data() {
         return {
-            input: '',
+            input: test,
             num: 0
         }
     }
@@ -58,11 +61,12 @@ export default {
 .hello {
     width: 80vw;
     max-width: 1280px;
-    margin: 15vh auto 0 auto;
+    margin: 10vh auto 0 auto;
 }
 
-h2,
-h3 {}
+h1 {
+    margin: 5vh 0;
+}
 
 .el-row {
     margin-top: 1.35em;
