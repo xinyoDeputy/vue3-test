@@ -1,26 +1,28 @@
 <template>
-<HelloWorld msg="Vue 3 playground with Copilot 2" />
+<SideBar />
+<HelloWorld msg="Vue 3 project with Copilot 2" />
+<!-- <button>I am outside</button> -->
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import SideBar from './components/List.vue'
 
 export default {
     name: 'App',
     components: {
-        HelloWorld
+        HelloWorld,
+        SideBar
     }
 }
 </script>
 
 <style lang="scss">
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     // text-align: center;
-    color: #2c3e50;
-    margin: 3vh 3vh 0 3vh;
+    color: #361748;
     font-family: 'Lato', sans-serif;
 }
 
